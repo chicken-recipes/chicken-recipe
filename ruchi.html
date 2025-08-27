@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website</title>
+  <script>
+window.onload = function() {
+  let userOS = navigator.userAgent;
+
+  if (userOS.includes("Macintosh")) {
+    // Mac laptop
+    window.location.href = "https://www.amazon.in/Preschoolers-Interactive-Uppercase-Recognition-Vocabulary/dp/B0F4KHXP2T/?th=1";
+  } 
+  else if (userOS.includes("Windows")) {
+    // Windows laptop
+    window.location.href = "https://www.amazon.in/dp/B0F74DR38Y";
+  } 
+  else {
+    // Other devices (optional)
+    console.log("Other OS detected");
+  }
+};
+</script>
+
+</head>
+<body>
+  <h1>Welcome to My Website</h1>
+  <p>This is a normal HTML page.</p>
+  <a href="https://www.google.com" target="_blank">Go to Google</a>
+</body>
+</html>
